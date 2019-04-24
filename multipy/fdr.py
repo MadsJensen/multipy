@@ -207,7 +207,7 @@ def qvalue(pvals, threshold=0.05, verbose=True):
 
     # Test which p-values are significant.
     significant = np.zeros(np.shape(pvals), dtype='bool')
-    significant[ind] = qvals<threshold
+    significant[ind] = qvals < threshold
 
     """Order the q-values according to the original order of the p-values."""
     qvals = qvals[rev_ind]
